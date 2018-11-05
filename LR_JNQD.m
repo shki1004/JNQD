@@ -9,7 +9,7 @@ clear;clc;close all;
 
 load('spatial_freq.mat'); % spatial frequency with viewing distance = 1.3m
 
-load('gradient_offset_weight_qp_intra.mat'); % Ground truth gradient and slope values
+load('gradient_offset_weight_qp_intra.mat'); % Trained gradient and slope values
 
 sequence = {'BQMall'};
 
@@ -49,7 +49,7 @@ for seq = 1:1
             end
         end
         
-        %% 3-1. Gradient & Offset ¸¦ regression
+        %% 3-1. Gradient & Offset Â¸Â¦ regression
         % feature extraction
         feat = All_test_feature(Y_ori);
         
